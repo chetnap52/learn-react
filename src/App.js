@@ -1,21 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import MyComponent from "./MyComponent.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello My Application</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello My Application</h1>
+      <MyComponent />
+      <MyComponent user="Chetna" />
+      <MyComponent user="Pandey" />
+      <MyComponent user="Pandey" age="22" />
+      {/* @todo: Learn how to add text inside a component tags   */}
     </div>
   );
 }
